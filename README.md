@@ -47,3 +47,54 @@ Seguir regulamentações de direitos autorais para garantir a distribuição leg
 Feedback dos Usuários:
 
 Oferecer um canal para que os usuários possam fornecer feedback e relatar problemas.
+
+
+
+
+Resposta:
+---
+# **🧠 Agente Inteligente para Coleta de Recursos e Evitação de Zumbis**  
+
+## **🛠️ Ambiente de Desenvolvimento**  
+Para rodar o projeto, o ambiente foi configurado no **PyCharm**.  
+
+### **📌 Tecnologias e Bibliotecas Utilizadas por enquanto**  
+🔹 **Python 3**  
+
+## **🌍 O Ambiente**  
+O ambiente é uma **grade 10x10**, onde cada célula pode conter:  
+✅ **Espaço vazio** (caminhável)  
+🍏 **Recursos** (comida, água, remédios)  
+🧟‍♂️ **Zumbis** (perigo!)  
+🧱 **Obstáculos** (bloqueiam o caminho)  
+
+O agente pode **se mover apenas para frente**, facilitando a lógica de movimentação.  
+
+## **🚀 Estratégia do Agente**  
+O agente segue a seguinte lógica:  
+- 🚀 **Explorar o ambiente**  
+- 🎯 **Priorizar recursos mais próximos**  
+- ⚠️ **Evitar zumbis e recalcular sua rota**  
+
+## **🤖 Como o Agente Decide?**  
+O agente usa regras simples para tomar decisões:  
+- **Sempre vai na direção do recurso mais próximo.**  
+- **Se um zumbi estiver no caminho, ele desvia para a célula mais segura.**  
+- **Para caminhos mais longos, ele usa o algoritmo A* (A-Star)** para encontrar a melhor rota.  
+  - *(Já utilizei essa abordagem para calcular a melhor rota entre dois pontos usando a API do Google Maps em outro projeto. Aqui, segue a mesma ideia.)*  
+
+## **🏆 Sistema de Pontuação** *(Se der tempo, implementação futura)*  
+✅ **+10 pontos** por coletar recursos  
+❌ **-20 pontos** se encontrar um zumbi (**game over**)  
+🚶‍♂️ **-1 ponto** por movimento *(para incentivar trajetórias curtas)*  
+
+## **💡 Possíveis Melhorias**  
+🔹 Fazer o agente **memorizar posições** de recursos e zumbis.  
+🔹 Usar **aprendizado de máquina (Q-learning)** para melhorar as decisões.  
+🔹 Criar **zumbis móveis** para tornar o jogo mais desafiador.  
+
+---
+
+Esse README agora está bem estruturado e fácil de entender. 🚀
+
+
